@@ -1,6 +1,8 @@
-# Wambui Rahab
-
-## Portfolio
-This weeks work
-## My work
-Open my portfolio.html to view my work https://gachungi.github.io/
+## Project Name 
+Gachungi.github.io
+##
+Wambui Rahab
+##Description
+##installation
+##link to page
+<https://gachungi.github.io/>
