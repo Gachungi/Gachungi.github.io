@@ -1,61 +1,169 @@
 <html>
-<head> <link rel="stylesheet" href="css/styles.css"> </head>
-<title> Project </title>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-</ul>
+  <head>
+    <title> Home </title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+  </head>
   <body >
-  <h1 style= "color:purple; text-align: left;
-
-
-font-style: oblique; font-weight: bold; font-family: fantasy; font-size: 45">
-NAME: Wambui Rahab
- </h1>
-
-<img src="assets/bui.jpg" style="width:304px;height:228px">
-<p style="color:blue; font-size: 30">
-  MY PROJECTS </p>
-
-  <table>
-    <col width="200">
-    <col width="200">
-  <colgroup>
-
-  </colgroup>
-  <tr>
-    <th style="color: blue">Project</th>
-    <th style="color: blue">Description</th>
-    <th style="color: blue">Language</th>
-  </tr>
-  <tr>
-    <th>
-      <li>
-<a href="file:///C:/Users/Rahee/Documents/cupcake/home.html"> Cupcakes </a> </li>
-</th>
-    <th> Delicious Cupcakes </th>
-    <th>  html and css </th>
-  </tr>
-<tr>
-  <th><li>
-  <a href="file:///C:/Users/Rahee/Documents/animal/animal.html"> Animal </a> </li>
-</th>
-<th> Adoptable Animals </th>
-<th> html and css</th>
-</tr>
-</table>
-
-<p>
-</p>
-  <a href="file:///C:/Users/Rahee/Documents/project/aboutme.html" style="color:purple"> About Me </a> </p>
-
-</h2>
-</body>
-</html>
+    <div class="jumbotron" style="background-color: pink">
+      <div class="container">
+        <h1 style= "color:purple; text-align: left;
+        font-style: oblique; font-weight: bold; font-family: fantasy; font-size: 45">
+        NAME: Wambui Gachungi
+        </h1>
+        
+        <ul class="nav nav-tabs">
+          <li><a href="file:///C:/Users/Rahee/Documents/project/index.html#"><span class="glyphicon glyphicon-home"></span></a></li>
+          <li><a href="file:///C:/Users/Rahee/Documents/project/aboutme.html">About </a></li>
+          <!--  services dropdown -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li> <a href="file:///C:/Users/Rahee/Documents/project/projects.html"> Projects</a></li>
+              <button type="button" class="btn btn-link btn-md">Feedback</button><br>
+              <li><button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myModal">Schedule a Visit</button></li>
+            </ul>
+          </li>
+          <!--  dropdown for services -->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li> <a href="file:///C:/Users/Rahee/Documents/Arraylooping/index.html"> PingPong</a></li>
+              <li> <a href="file:///C:/Users/Rahee/Documents/mpft-ip-master/index.html"> Anita's Kitchen </a></li>
+            </ul>
+          </li>
+          <!-- end of dropdown -->
+          <li><a href="#demo" data-toggle="collapse">Contacts</a>
+          <div id="demo" class="collapse">
+            <p>We are situated at Kipro Center Westlands opposite Parklands Baptise Church.</p>
+            <p>Tel: +254 738555205</p>
+            <p>Email: rwambui89@gmail.com</p>
+          </div>
+        </li>
+        
+        <ul class="nav navbar-nav navbar-right">
+          <li><button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#mySign">Sign Up</button></li>
+          <li><button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myLogin"><a href="file:///C:/Users/Rahee/Documents/project/index.html#"><span class="glyphicon glyphicon-user"></span></a>Login</button></li>
+        </ul>
+        </ul> <!-- End of nav-tabs --><br><br>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+            
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Schedule a Visit</h4>
+              </div>
+              <div class="modal-body">
+                <p>Personal Information.</p>
+                
+                <div id="form">
+                  <form action="/action_page.php">
+                    <label for="fname">Your Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+                    <label for="country">Gender</label>
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other" checked> Other<br><br>
+                    <label for="lname">ID No</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your ID No">
+                    <label for="lname">Tell No</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Tell No"><br><br>
+                    <label for="reason">Please indicate a brief reason for the visit</label>
+                    <input type="text" id="reason" name="reason" placeholder="Your reason"><br><br>
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+                <!--  svvbn -->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+          </div> <!-- End of modal -->
+          <!-- Modal for login -->
+          
+          <div class="modal fade" id="myLogin" role="dialog">
+            <div class="modal-dialog">
+              
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Please Login</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Insert your Username and Password.</p>
+                  
+                  <div id="form">
+                    <form action="/action_page.php">
+                      <label for="username">Username</label>
+                      <input type="text" id="username" name="username" placeholder="Username"><br><br>
+                      <label for="password">Password</label>
+                      <input type="text" id="password" name="password" placeholder="Password"><br><br>
+                      
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  <!--  svvbn -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- End for login -->
+          <!--Sign Up Modal -->
+          <div class="modal fade" id="mySign" role="dialog">
+            <div class="modal-dialog">
+              
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Sign Up</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Personal Information.</p>
+                  
+                  <div id="form">
+                    <form action="/action_page.php">
+                      <label for="fname">Your Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name"><br><br>
+                      <label for="email">Your Email</label>
+                      <input type="text" id="email" name="firstname" placeholder="Your email"><br><br>
+                      <label for="country">Gender</label>
+                      <input type="radio" name="gender" value="male" checked> Male
+                      <input type="radio" name="gender" value="female"> Female
+                      <input type="radio" name="gender" value="other" checked> Other<br><br>
+                      <label for="lname">Password</label>
+                      <input type="text" id="lname" name="lastname" placeholder="password">
+                      <label for="password">Confirm Password</label>
+                      <input type="text" id="password" name="password" placeholder="confirm password">
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                  <!--  svvbn -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+              
+            </div>
+            </div> <!-- End of modal -->
+            <div class="image">
+              <img src="images/bui.jpg" style="width:304px;height:228px">
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
