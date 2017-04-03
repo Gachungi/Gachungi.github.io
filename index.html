@@ -5,16 +5,36 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body >
-    <div class="jumbotron" style="background-color: pink">
+    <div class="jumbotron" style="background-color: aqua">
       <div class="container">
         <h1 style= "color:purple; text-align: left;
         font-style: oblique; font-weight: bold; font-family: fantasy; font-size: 45">
-        NAME: Wambui Gachungi
+        <br>NAME: Wambui Gachungi
         </h1>
-        
-        <ul class="nav nav-tabs">
+<!-- new nav -->
+<nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="row">
+          <div class="col-sm-8">
+            <ul class="nav navbar-nav">
+       
+             <li class="active"><a href="index.html"><img id="img-header" src="images/brand.png" style="width:130px;height:40px"><span class="sr-only">(current)</span></a></li>
           <li><a href="file:///C:/Users/Rahee/Documents/project/index.html#"><span class="glyphicon glyphicon-home"></span></a></li>
           <li><a href="file:///C:/Users/Rahee/Documents/project/aboutme.html">About </a></li>
           <!--  services dropdown -->
@@ -35,19 +55,30 @@
             </ul>
           </li>
           <!-- end of dropdown -->
+           <li><a href="file:///C:/Users/Rahee/Documents/project/faq.html">FAQs</a></li>
+           <li><a href="file:///C:/Users/Rahee/Documents/project/whyus.html">Why Us</a></li>
           <li><a href="#demo" data-toggle="collapse">Contacts</a>
-          <div id="demo" class="collapse">
+          <div id="demo" class="collapse"  style="background-color: cyan">
             <p>We are situated at Kipro Center Westlands opposite Parklands Baptise Church.</p>
             <p>Tel: +254 738555205</p>
             <p>Email: rwambui89@gmail.com</p>
           </div>
         </li>
-        
-        <ul class="nav navbar-nav navbar-right">
+        </div>
+        <div class="col-sm-4">
+        <div class="sign" id="signup">
+        <ul class="nav navbar-nav navbar-right" >
           <li><button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#mySign">Sign Up</button></li>
           <li><button type="button" class="btn btn-link btn-sm" data-toggle="modal" data-target="#myLogin"><a href="file:///C:/Users/Rahee/Documents/project/index.html#"><span class="glyphicon glyphicon-user"></span></a>Login</button></li>
         </ul>
-        </ul> <!-- End of nav-tabs --><br><br>
+        </div>
+        </div><!--  end of col-sm-4 -->
+        </ul> 
+        </div>
+        </div>
+        </nav>
+        <!-- End of nav-tabs --><br><br>
+
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
           <div class="modal-dialog">
@@ -70,9 +101,9 @@
                     <input type="radio" name="gender" value="female"> Female
                     <input type="radio" name="gender" value="other" checked> Other<br><br>
                     <label for="lname">ID No</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your ID No">
+                    <input type="number" id="lname" name="lastname" placeholder="Your ID No">
                     <label for="lname">Tell No</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your Tell No"><br><br>
+                    <input type="number" id="lname" name="lastname" placeholder="Your Tell No"><br><br>
                     <label for="reason">Please indicate a brief reason for the visit</label>
                     <input type="text" id="reason" name="reason" placeholder="Your reason"><br><br>
                     <input type="submit" value="Submit">
@@ -106,7 +137,7 @@
                       <label for="username">Username</label>
                       <input type="text" id="username" name="username" placeholder="Username"><br><br>
                       <label for="password">Password</label>
-                      <input type="text" id="password" name="password" placeholder="Password"><br><br>
+                      <input type="password" id="password" name="password" placeholder="Password"><br><br>
                       
                       <input type="submit" value="Submit">
                     </form>
@@ -145,9 +176,9 @@
                       <input type="radio" name="gender" value="female"> Female
                       <input type="radio" name="gender" value="other" checked> Other<br><br>
                       <label for="lname">Password</label>
-                      <input type="text" id="lname" name="lastname" placeholder="password">
+                      <input type="password" id="lname" name="lastname" placeholder="password">
                       <label for="password">Confirm Password</label>
-                      <input type="text" id="password" name="password" placeholder="confirm password">
+                      <input type="password" id="password" name="password" placeholder="confirm password">
                       <input type="submit" value="Submit">
                     </form>
                   </div>
@@ -160,10 +191,31 @@
               
             </div>
             </div> <!-- End of modal -->
+            <div class="row">
+    <div class="col-sm-4">
             <div class="image">
-              <img src="images/bui.jpg" style="width:304px;height:228px">
-            </div>
+              <img src="images/adren.jpeg" style="width:304px;height:228px">
+              </div>
+              </div>
+              <div class= "col-sm-4">
+                
+<p>
+  I am passionate about technology since its diverse and thus changes very often. Technology makes work easier, accurate and easily retrievable. </p><br>
+  <p>I would love to create an app that showcases places in Kenya that have dangerous games since im an adrenaline junkie.
+</p>
+              </div>
+              <div class="col-sm-4">
+                <img src="images/coding.jpg" style="width:304px;height:228px">
+              </div>
+            </div><br><br>
+
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            <div class="hex">
+           <h6 style="color: blue">&#8482; &#174; &#169; 2017 Personal Branding</h6></div>
           </div>
         </div>
+
       </body>
     </html>
